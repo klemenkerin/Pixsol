@@ -156,11 +156,11 @@ const Header = (props: HomeProps) => {
                     {!wallet ? ( <ConnectButton className="connect button-hover">connect wallet</ConnectButton>) : ( <ConnectButton className="connect" disabled>{shortenAddress(wallet.publicKey.toBase58() || "")}</ConnectButton>)}
                 </div>
                 <div className="content-header">
-                <img className="hippo-image" src="img/logo.png" alt="Lazy Hippos"></img>
+                <img className="hippo-image" src="img/pixsol.gif" alt="Pixsol image"></img>
                 <h1>Welcome to Pixsol!</h1>
                 <h2 className="hippo-description">128 generated abstract images <br />lost in the Solana metaverse.</h2>
 
-                <img className="hippo-gif-mobile" src="img/logo.png" alt="Lazy Hippos"></img>
+                <img className="hippo-gif-mobile" src="img/pixsol.gif" alt="Pixsol image"></img>
 
                 {(<h3 className="coming-soon">{!isActive ? "Presale starting soon. Mint price 1 SOL." : "Price 1 SOL"}</h3>)}
                 {<h3>{remaining != -1 ? "Remaining: " + (remaining) + "/128" : ""}</h3>}

@@ -191,7 +191,7 @@ button {
 }
 
 .hippo-image {
-    width: 45vh;
+    width: 60vh;
     float: right;
 }
 
@@ -269,7 +269,7 @@ button {
 }
 
 .attribute-category {
-    margin: 0 75px 70px 75px;
+    margin: 0 10px 10px 10px;
 }
 
 .roadmap {
@@ -489,3 +489,6 @@ button {
     margin-bottom: 50px;
 }
 
+.pixsol-art {
+    width:450px;
+}

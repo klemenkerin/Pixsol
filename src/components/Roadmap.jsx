@@ -25,7 +25,7 @@ function Roadmap() {
                     </div>
                     <div className="RoadmapLine">
                         <div className="RoadmapLineCenter">
-                            <div className="RoadmapLineDot filled"></div>
+                            <div className="RoadmapLineDot"></div>
                         </div>
                     </div>
                     <div className="RoadmapEmpty"></div>
@@ -38,7 +38,7 @@ function Roadmap() {
                     </div>
                     <div className="RoadmapLine">
                         <div className="RoadmapLineCenter">
-                            <div className="RoadmapLineDot filled"></div>
+                            <div className="RoadmapLineDot"></div>
                         </div>
                     </div>
                     <div className="RoadmapEmpty"></div>
