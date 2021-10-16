@@ -23,11 +23,11 @@ import {
 
 const ConnectButton = styled(WalletDialogButton)``;
 
-const CounterText = styled.span``; // add your styles here
+const CounterText = styled.span``;
 
-const MintContainer = styled.div``; // add your styles here
+const MintContainer = styled.div``;
 
-const MintButton = styled(Button)``; // add your styles here
+const MintButton = styled(Button)``; 
 
 export interface HomeProps {
   candyMachineId: anchor.web3.PublicKey;
@@ -40,9 +40,9 @@ export interface HomeProps {
 
 const Header = (props: HomeProps) => {
     const [balance, setBalance] = useState<number>();
-    const [isActive, setIsActive] = useState(false); // true when countdown completes
-    const [isSoldOut, setIsSoldOut] = useState(false); // true when items remaining is zero
-    const [isMinting, setIsMinting] = useState(false); // true when user got to press MINT
+    const [isActive, setIsActive] = useState(false);
+    const [isSoldOut, setIsSoldOut] = useState(false); 
+    const [isMinting, setIsMinting] = useState(false);
 
     const [remaining, setRemaining] = useState(-1);
 
@@ -147,23 +147,23 @@ const Header = (props: HomeProps) => {
         <div className="header">
             <div className="container">
                 <div className="navbar">
-                    <h2 className="logo">LAZY HIPPOS</h2>
+                    <h2 className="logo">PIXSOL</h2>
                     <div className="menu">
-                        <a href="https://lazyhippo.art/#attributes" className="menu-item">attributes</a>
+                        <a href="https://lazyhippo.art/#attributes" className="menu-item">our art</a>
                         <a href="https://lazyhippo.art/#roadmap" className="menu-item">roadmap</a>
                         <a href="https://lazyhippo.art/#faq" className="menu-item">FAQ</a>
                     </div>
                     {!wallet ? ( <ConnectButton className="connect button-hover">connect wallet</ConnectButton>) : ( <ConnectButton className="connect" disabled>{shortenAddress(wallet.publicKey.toBase58() || "")}</ConnectButton>)}
                 </div>
                 <div className="content-header">
-                <img className="hippo-image" src="img/hippo-gif.gif" alt="Lazy Hippos"></img>
-                <h1>Meet our lazy hippos!</h1>
-                <h2 className="hippo-description">1111 randomly generated very<br /> lazy hippos living on Solana blockchain.</h2>
+                <img className="hippo-image" src="img/logo.png" alt="Lazy Hippos"></img>
+                <h1>Welcome to Pixsol!</h1>
+                <h2 className="hippo-description">128 generated abstract images <br />lost in the Solana metaverse.</h2>
 
-                <img className="hippo-gif-mobile" src="img/hippo-gif.gif" alt="Lazy Hippos"></img>
+                <img className="hippo-gif-mobile" src="img/logo.png" alt="Lazy Hippos"></img>
 
-                {(<h3 className="coming-soon">{!isActive ? "Presale starting soon. Mint price 0.25 SOL." : "Price 0.25 SOL"}</h3>)}
-                {<h3>{remaining != -1 ? "Remaining: " + (remaining + 611) + "/1111" : ""}</h3>}
+                {(<h3 className="coming-soon">{!isActive ? "Presale starting soon. Mint price 1 SOL." : "Price 1 SOL"}</h3>)}
+                {<h3>{remaining != -1 ? "Remaining: " + (remaining) + "/128" : ""}</h3>}
 
                 <MintContainer>
                     {(
@@ -205,11 +205,12 @@ const Header = (props: HomeProps) => {
                 </Alert>
             </Snackbar>
     
-                <a href="https://discord.gg/vmrQgSXdED"><i className="fab fa-discord"></i></a>
-                <a href="https://twitter.com/SolHippo"><i className="fab fa-twitter"></i></a>
+                <a href="#"><i className="fab fa-discord"></i></a>
+                <a href="#"><i className="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <div className="header-bottom-image"></div>
+          {//<div className="header-bottom-image"></div>
+          }
         </div>
     );
 }
